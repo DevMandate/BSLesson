@@ -23,7 +23,7 @@
             <div class="navbar-nav">
               <a href="index.html" class="nav-link ">Home</a>
               <a href="beddings.html" class="nav-link active">Beddings</a>
-              <a href="#" class="nav-link">Appliances</a>
+              <a href="appliances.html" class="nav-link">Appliances</a>
               <a href="#" class="nav-link">Electronics</a>
 
               <!-- Below is a dropdown menu with more options in 'see more' -->
@@ -47,9 +47,9 @@
 
 
             <div class="navbar-nav ms-auto">
-              <span><a href="" class="nav-button btn btn-outline-success m-2"> Login</a></span> 
+              <span><a href="" class="nav-button btn btn-outline-success m-2"  data-bs-toggle="modal" data-bs-target="#login-modal"> Login</a></span> 
 
-              <span><a href="" class="nav-button btn btn-outline-info m-2 text-success"> Register</a></span>
+              <span><a href="" class="nav-button btn btn-outline-info m-2 text-success" data-bs-toggle="modal" data-bs-target="#registration-modal"> Register</a></span>
             
             </div>
            </div>
@@ -62,6 +62,266 @@
 
 
     <!-- Section 1 ends here -->
+
+    <!-- The Modal -->
+    <!-- Registration modal Starts Here -->
+     <div class="modal fade" id="registration-modal">
+      <!-- Below div will carry the modal dialog -->
+       <div class="modal-dialog">
+        <!-- below div will carry the 3 sections of the modal  -->
+         <div class="modal-content">
+          <!-- Modal header -->
+           <div class="modal-header ">
+            <h3 class="text-primary text-center text-capitalize">
+              Enter your registration details
+            </h3>
+           </div>
+
+           <!-- Modal body -->
+           <div class="modal-body">
+            <form>
+              <label>First Name: </label> <br>
+              <input type="text" placeholder="Enter your first name" class="form-control">
+
+              <label>Last Name: </label> <br>
+              <input type="text" placeholder="Enter your last name" class="form-control">
+
+              <label>Email Address: </label> <br>
+              <input type="email" placeholder="Enter your email address" class="form-control">
+
+              <label>Phone Number: </label> <br>
+              <input type="tel" placeholder="Enter your Phone number here" class="form-control">
+
+              <label>Password: </label> <br>
+              <input type="password" placeholder="Enter your Password here" class="form-control">
+
+              <label> Confirm Password: </label> <br>
+              <input type="password" placeholder="Kindly confirm your password" class="form-control"> <br>
+
+              <input type="submit" value="Login" class="btn btn-outline-danger">
+
+
+            </form>
+
+           </div>
+
+            <!-- Modal footer -->
+           <div class="modal-footer">
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+           </div>
+
+
+         </div>
+       </div>
+
+     </div>
+
+    <!-- Registration modal ends here -->
+
+    <!-- login modal starts here -->
+    <div class="modal fade" id="login-modal">
+      <!-- Below div will carry the modal dialog -->
+       <div class="modal-dialog">
+        <!-- below div will carry the 3 sections of the modal  -->
+         <div class="modal-content">
+          <!-- Modal header -->
+           <div class="modal-header ">
+            <h3 class="text-primary text-center text-capitalize">
+              Enter your details to Login
+            </h3>
+           </div>
+
+           <!-- Modal body -->
+           <div class="modal-body">
+            <form>
+              <label>Email Address: </label> <br>
+              <input type="email" placeholder="Enter your email address" class="form-control">
+
+              <label> Password: </label> <br>
+              <input type="password" placeholder="Kindly enter your password" class="form-control"> <br>
+
+              <input type="submit" value="login" class="btn btn-outline-danger">
+
+
+            </form>
+
+           </div>
+
+            <!-- Modal footer -->
+           <div class="modal-footer">
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+           </div>
+
+
+         </div>
+       </div>
+
+     </div>
+
+
+    <!-- login modal ends here -->
+     
+     
+
+    <!-- Section 2 starts here -->
+   <h1>Beddings</h1>
+
+  <section class="row text-center">
+    <div class="col-md-3">
+      <img src="images/bed1.jpg" height="250px" width="250px">
+      <h5>Floral Bedding</h5>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, sunt?</p>
+      <b class="text-warning"> KES 3,300 </b> <br>
+      <span class="badge bg-danger mine">20% off</span>
+    </div>
+
+    <div class="col-md-3">
+      <img src="images/bed2.jpg" height="250px" width="250px">
+      <h5>Duvet Pure White</h5>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, sunt?</p>
+      <b class="text-warning"> KES 2,300 </b> <br>
+      <span class="badge bg-danger mine">20% off</span>
+    </div>
+
+    <div class="col-md-3">
+      <img src="images/bed3.jpg" height="250px" width="250px">
+      <h5>Plain Double Sided</h5>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, sunt?</p>
+      <b class="text-warning"> KES 3,800 </b> <br>
+      <span class="badge bg-danger mine">10% off</span>
+    </div>
+    <div class="col-md-3">
+      <img src="images/bed4.jpeg" height="250px" width="250px">
+      <h5>Binded Quality</h5>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, sunt?</p>
+      <b class="text-warning"> KES 5,300 </b> <br>
+      <span class="badge bg-danger mine">30% off</span>
+    </div>
+    
+  </section>
+  <br>
+    <!-- Section 2 ends here -->
+
+
+    <!-- Section 3 starts here -->
+  
+
+   <section class="row text-center">
+     <div class="col-md-3">
+       <img src="images/bed5.jpg" height="250px" width="250px">
+       <h5>Clear Bedding</h5>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, sunt?</p>
+       <b class="text-warning"> KES 3,200 </b> <br>
+       <span class="badge bg-danger mine">20% off</span>
+     </div>
+ 
+     <div class="col-md-3">
+       <img src="images/bed6.jpg" height="250px" width="250px">
+       <h5>Duvet Premier</h5>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, sunt?</p>
+       <b class="text-warning"> KES 2,100 </b> <br>
+       <span class="badge bg-danger mine">10% off</span>
+     </div>
+ 
+     <div class="col-md-3">
+       <img src="images/bed3.jpg" height="250px" width="250px">
+       <h5>Plain Single Sided</h5>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, sunt?</p>
+       <b class="text-warning"> KES 5,100 </b> <br>
+       <span class="badge bg-danger mine">15% off</span>
+     </div>
+     <div class="col-md-3">
+       <img src="images/bed8.jpg" height="250px" width="250px">
+       <h5>Binded Quality</h5>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, sunt?</p>
+       <b class="text-warning"> KES 5,300 </b> <br>
+       <span class="badge bg-danger mine">30% off</span>
+     </div>
+     
+   </section>
+   <br>
+  
+     <!-- Section 3 ends here -->
+
+     
+     <!-- Section 4 starts here -->
+   <h1>Beddings</h1>
+
+   <section class="row text-center">
+     <div class="col-md-3">
+       <img src="images/bed9.jpg" height="250px" width="250px">
+       <h5>Carol Bedding</h5>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, sunt?</p>
+       <b class="text-warning"> KES 3,300 </b> <br>
+       <span class="badge bg-danger mine">20% off</span>
+     </div>
+ 
+     <div class="col-md-3">
+       <img src="images/bed10.jpg" height="250px" width="250px">
+       <h5>King Bedding</h5>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, sunt?</p>
+       <b class="text-warning"> KES 2,300 </b> <br>
+       <span class="badge bg-danger mine">20% off</span>
+     </div>
+ 
+     <div class="col-md-3">
+       <img src="images/bed11.jpg" height="250px" width="250px">
+       <h5>Silk Better Pro</h5>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, sunt?</p>
+       <b class="text-warning"> KES 3,800 </b> <br>
+       <span class="badge bg-danger mine">10% off</span>
+     </div>
+     <div class="col-md-3">
+       <img src="images/bed12.jpg" height="250px" width="250px">
+       <h5>Quality Duvet</h5>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, sunt?</p>
+       <b class="text-warning"> KES 5,300 </b> <br>
+       <span class="badge bg-danger mine">30% off</span>
+     </div>
+     
+   </section>
+    <br> <br>
+     <!-- Section 4 ends here -->
+
+      <!-- Footer starts here -->
+      <section class="row p-3 bg-warning">
+        <div class="col-md-4 text-white">
+          <h2>About Us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab voluptas aspernatur a ut suscipit.</p>
+  
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum doloremque eveniet eius ullam atque blanditiis qui adipisci modi inventore nesciunt corrupti est, voluptate vero illo molestias. Odio, voluptatum quam. Error.</p>
+        </div>
+  
+        <div class="col-md-4 text-white" >
+          <h2>Contact Us</h2>
+          <form >
+            <input type="email" placeholder="Enter you email address" class="form-control"><br><br>
+            <textarea placeholder="Leave a Comment" class="form-control"></textarea> <br><br>
+            <input type="button" value="Send Message" class="btn btn-outline-danger">
+          </form>
+        </div>
+  
+        <div class="col-md-4">
+          <h2 class="text-white">Stay Connected</h2>
+          <img src="images/fb.png" >
+          <img src="images/in.png" >
+          <img src="images/x.png" >
+  
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo explicabo iste accusamus maxime soluta cupiditate sequi ipsum voluptatibus, necessitatibus facere amet neque illo cumque magni eaque reiciendis officia aut odio pariatur dolor debitis asperiores ullam?</p>
+  
+  
+  
+        </div>
+       </section>
+  
+       <section class="row text-center text-bold font-size-18px">
+        <p class="bg-black text-white text center p-3"><b>Developed by X.&copy;2024. All Rights Reserve</b></p>
+       </section>
+  
+  
+      <!-- Footer ends here -->
+ 
+
 
 
 
