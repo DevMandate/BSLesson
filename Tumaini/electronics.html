@@ -7,6 +7,80 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/bootstrap.js"></script>
     <link rel="stylesheet" href="AOS_dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* General card styling */
+.creative-card {
+    background-color: rgba(8, 8, 8, 0.3); /* Greenish transparent background */
+    font-family: poppins;
+    font-weight: bolder;
+    font-size: 20px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    padding: 30px;
+    text-align: center;
+    margin: 50px 0;
+    border: 2px solid white;
+    transition: transform 0.7s ease-in-out;
+    width: 90%; /* Ensure uniform card width */
+}
+
+/* Hover effects */
+.creative-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(238, 7, 7, 0.932);
+}
+
+/* Layout for 2 cards in left column */
+.card-column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Space between the two cards */
+    align-items: center; /* Center cards horizontally */
+    height: 100%; /* Ensure equal height */
+}
+
+/* Layout for 1 card in the center */
+.card-column-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Layout for 2 cards in right column */
+.card-column-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Space between the two cards */
+    align-items: center; /* Center cards horizontally */
+    height: 100%; /* Ensure equal height */
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+    .creative-card {
+        margin: 20px auto;
+        width: 90%;
+    }
+    .card-column-left, .card-column-right {
+        justify-content: center;
+    }
+}
+
+/* Video overlay */
+.video-overlay {
+    background-color: rgba(0, 128, 0, 0.3);
+}
+
+/* Animation delay for smoother effects */
+[data-aos] {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+}
+
+    </style>
 
 </head>
 <body>
@@ -165,81 +239,79 @@
 
     <!-- setion 4 ends here -->
 
-    <!-- section 5 starts Here -->
-     <!-- <section class="row" style="background: iframe;<iframe width="420" height="315"
-     src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
-     </iframe>" >
-        <div class="col-md-3 text-white" style="background: url(images/back1.jpg); border-left-width: 20px;"> 
-            <div class="card shadow"></div>
-                <h3>Experience Crystal Clear Audio Like Never Before – Limited Stock, Shop Now!</h3>
+
+
+    <!-- section 5 starts here -->
+    <div class="container-fluid">
+        <section class="row" style="position: relative; height: 80vh; overflow: hidden;">
+            <!-- Background video -->
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; overflow: hidden;">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/epBN_hovPDI?autoplay=1&mute=1&loop=1&playlist=epBN_hovPDI" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                </iframe>
             </div>
+             <!-- Green overlay -->
+            <div class="video-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 128, 0, 0.5); z-index: -1;"></div>
+
+    
+            <!-- Left column (2 cards) -->
+            <div class="col-12 col-md-3 text-white card-column-left" data-aos="zoom-in" data-aos-duration="2000">
+                <div class="card shadow text-white creative-card">
+                    <h3>Revolutionary Sound Tech</h3>
+                    <p>Experience sound quality that will change the way you listen. Shop now for exclusive offers.</p>
+                </div>
+                <div class="card shadow text-white creative-card" data-aos="fade-left" data-aos-duration="2500">
+                    <h3>Limited Edition Speakers</h3>
+                    <p>Get your hands on our limited edition crystal-clear speakers. Don’t miss out!</p>
+                </div>
+            </div>
+    
+            <!-- Middle column (1 card) -->
+            <div class="col-12 col-md-3 text-white card-column-center" data-aos="zoom-out" data-aos-duration="3000">
+                <div class="card shadow text-white creative-card">
+                    <h3>Shop the Future</h3>
+                    <p>Cutting-edge audio devices now available with unbelievable clarity. Shop the future today!</p>
+                </div>
+            </div>
+    
+            <!-- Right column (2 cards) -->
+            <div class="col-12 col-md-3 text-white card-column-right">
+                <div class="card shadow text-white creative-card" data-aos="fade-right" data-aos-duration="3500">
+                    <h3>Wireless Wonders</h3>
+                    <p>Lose the wires and embrace freedom with our new wireless audio devices.</p>
+                </div>
+                <div class="card shadow text-white creative-card" data-aos="zoom-out-up" data-aos-duration="4000">
+                    <h3>Get Ready for Bass</h3>
+                    <p>Unleash the power of deep bass like never before. Perfect for audiophiles.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <br><br>
+    <hr>
+       
+    <!-- section 5 ends here -->
+
+    <!-- section 6 starts here  -->
+     <h2 class="text-center">Latest SonicPulse Originals</h2>
+     <section class="row p-3">
+        <div class="col-md-3">
+            <img src="images/a1.jpg">
+            <h3><b>Malaika by Shinski</b></h3>
+            <p><b>Love-Soul Genre</b></p>
+            <span>Listen </span><i class="fa-regular fa-circle-play"></i> 
+
+
         </div>
-        <div class="col-md-3" ></div>
         <div class="col-md-3"></div>
-        <div class="col-md-3"> 
-            <div class="card shadow text-white"  style="background: url(images/back1.jpg); border-left-width: 20px;">
-                <h3>Experience Crystal Clear Audio Like Never Before – Limited Stock, Shop Now!</h3>
-            </div>
-        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
      </section>
 
-     <section class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-3">
-            <div class="card shadow text-white"  style="background: url(images/back1.jpg); border-left-width: 20px;">
-                <h3>Experience Crystal Clear Audio Like Never Before – Limited Stock, Shop Now!</h3>
-            </div>
-        </div>
-        <div class="col-md-3 text-white"  style="background: url(images/back1.jpg); border-left-width: 20px;">
-            <div class="card shadow"></div>
-                <h3>Experience Crystal Clear Audio Like Never Before – Limited Stock, Shop Now!</h3>
-            </div>
-        </div>
-        <div class="col-md-3"></div>
-     </section> -->
-
-     <!-- section 5 starts here -->
-      <!-- section 5 starts here -->
-    <section class="row" style="position: relative; height: 80vh; overflow: hidden;">
-        <!-- Background video -->
-        <iframe width="420" height="345" 
-    src="https://www.youtube.com/embed/pbyyRCr60Q8?autoplay=1&mute=1">
-    </iframe>
-
-        <!-- Content with circular bordered divs -->
-        <div class="col-md-3 text-white" data-aos="zoom-in" data-aos-duration="3000">
-            <div class="card shadow text-white" style="background: url(images/back1.jpg); border-radius: 50%; padding: 20px; border: 5px solid white; text-align: center;" height="12px" width="12px">
-                <h3>Experience Crystal Clear Audio Like Never Before – Limited Stock, Shop Now!</h3>
-            </div>
-        </div>
-
-        <div class="col-md-3"></div>
-
-        <div class="col-md-3" data-aos="fade-up-left"
-        data-aos-anchor="#example-anchor"
-        data-aos-offset="700"
-        data-aos-duration="3000">
-            <div class="card shadow text-white" style="background: url(images/back1.jpg); border-radius: 50%; padding: 20px; border: 5px solid white; text-align: center;">
-                <h3>Experience Crystal Clear Audio Like Never Before – Limited Stock, Shop Now!</h3>
-            </div>
-        </div>
-
-        <div class="col-md-3"></div>
-    </section>
 
 
-    <!-- section 5 ends here -->
-
-
-
-
-
-    <!-- section 5 ends here -->
-
-
-
-
-
+    <!-- section 6 ends here  -->
 
 
 
