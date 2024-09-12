@@ -312,6 +312,27 @@
                     <a href="#" class="text-success" style="font-size: 30px;"><i class="fa-regular fa-circle-play"></i></a>
                 </span>
             </div>
+            <!-- Audio element to load and play the song -->
+            <audio id="audioPlayer" controls style="display:none;">
+                <source id="audioSource" src="audio/malaika.mp4" type="audio/mpeg">
+            </audio>
+
+            <script>
+                function playSong(songPath) {
+                    var audioPlayer = document.getElementById("audioPlayer");
+                    var audioSource = document.getElementById("audioSource");
+            
+                    // Set the source of the audio to the specified song path
+                    audioSource.src = songPath;
+            
+                    // Load and play the audio
+                    audioPlayer.load();
+                    audioPlayer.play();
+            
+                    // Optionally display the audio player after playing
+                    audioPlayer.style.display = "block";
+                }
+            </script>
         </div> 
     
         <!-- Card 2 -->
