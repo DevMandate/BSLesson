@@ -10,75 +10,74 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
-        /* General card styling */
-.creative-card {
-    background-color: rgba(8, 8, 8, 0.3); /* Greenish transparent background */
-    font-family: poppins;
-    font-weight: bolder;
-    font-size: 20px;
-    border-top-right-radius: 35px;
-    border-bottom-left-radius: 35px;
-    padding: 30px;
-    text-align: center;
-    margin: 50px 0;
-    border: 2px solid white;
-    transition: transform 0.7s ease-in-out;
-    width: 90%; /* Ensure uniform card width */
-}
-
-/* Hover effects */
-.creative-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 15px rgba(238, 7, 7, 0.932);
-}
-
-/* Layout for 2 cards in left column */
-.card-column-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; /* Space between the two cards */
-    align-items: center; /* Center cards horizontally */
-    height: 100%; /* Ensure equal height */
-}
-
-/* Layout for 1 card in the center */
-.card-column-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Layout for 2 cards in right column */
-.card-column-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; /* Space between the two cards */
-    align-items: center; /* Center cards horizontally */
-    height: 100%; /* Ensure equal height */
-}
-
-/* Responsive for small screens */
-@media (max-width: 768px) {
+            /* General Card Stying */
     .creative-card {
-        margin: 20px auto;
-        width: 90%;
+        background-color: rgba(8, 8, 8, 0.3); 
+        font-family: poppins;
+        font-weight: bolder;
+        font-size: 20px;
+        border-top-right-radius: 35px;
+        border-bottom-left-radius: 35px;
+        padding: 30px;
+        text-align: center;
+        margin: 50px 0;
+        border: 2px solid white;
+        transition: transform 0.7s ease-in-out;
+        width: 90%; /* Ensure uniform card width */
     }
-    .card-column-left, .card-column-right {
+
+    .creative-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 15px rgba(238, 7, 7, 0.932);
+    }
+
+    /* Layout for 2 cards in left column */
+    .card-column-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; /* Space between the two cards */
+        align-items: center; /* Center cards horizontally */
+        height: 100%; /* Ensure equal height */
+    }
+
+    /* Layout for 1 card in the center */
+    .card-column-center {
+        display: flex;
         justify-content: center;
+        align-items: center;
     }
-}
 
-/* Video overlay */
-.video-overlay {
-    background-color: rgba(0, 128, 0, 0.3);
-}
+    /* Layout for 2 cards in right column */
+    .card-column-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; /* Space between the two cards */
+        align-items: center; /* Center cards horizontally */
+        height: 100%; /* Ensure equal height */
+    }
 
-/* Animation delay for smoother effects */
-[data-aos] {
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
+    /* Responsive for small screens */
+    @media (max-width: 768px) {
+        .creative-card {
+            margin: 20px auto;
+            width: 90%;
+        }
+        .card-column-left, .card-column-right {
+            justify-content: center;
+        }
+    }
 
-}
+    /* Video overlay */
+    .video-overlay {
+        background-color: rgba(0, 128, 0, 0.3);
+    }
+
+    /* Animation delay for smoother effects */
+    [data-aos] {
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+
 
     </style>
 
