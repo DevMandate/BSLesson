@@ -6,6 +6,7 @@
     <title>Fashion</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
      <!-- Section 1 starts here -->
@@ -13,7 +14,7 @@
        <div class="col-md-12">
          <!-- below nav tag carries all the contents of the navbar -->
           <nav class="navbar navbar-expand-md navbar-light bg-light">
-           <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#sidemenu">Side Menu</button>
+           <button type="button" class="btn btn-outline-success" data-bs-toggle="offcanvas" data-bs-target="#sidemenu"><i class="fa-regular fa-face-smile"></i></button>
            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#items">
              <span class="navbar-toggler-icon"></span>
            </button>
@@ -125,7 +126,52 @@
         </div>
 
         <div class="offcanvas-body">
-          <p>Sidemenu body</p>
+          <p>Lorem ipsum dolor sit.</p>
+          <p>Lorem ipsum dolor sit.</p>
+          <p>Lorem ipsum dolor sit.</p>
+          <p>Lorem ipsum dolor sit.</p>
+
+
+          <a href="">Link1</a> <br>
+          <a href="">Link2</a> <br>
+          <a href="">Link3</a> <br> <br> <br>
+
+          <button type="button" class="btn btn-success">Login</button>
+
+
+          <div class="accordion" id="pages">
+            <!-- page 1 accordion -->
+            <span class="accordion-header" id="page-1">
+              <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#page-1">Page One</button>
+          </span>
+  
+          <div id="page-1" class="accordion-collapse collapse" data-bs-parent="#pages" aria-labelledby="heading-1">
+              <div class="accordion-body bg-success text-white">Page One Details</div>
+          </div>
+
+          <!-- page 2 accordion -->
+          <span class="accordion-header" id="page-2">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#page-2">Page Two</button>
+        </span>
+
+        <div id="page-2" class="accordion-collapse collapse" data-bs-parent="#pages" aria-labelledby="heading-2">
+            <div class="accordion-body bg-success text-white">Page Two Details</div>
+        </div>
+
+        <!-- page 3 accordion -->
+        <span class="accordion-header" id="page-3">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#page-1">Page Three</button>
+      </span>
+
+      <div id="page-3" class="accordion-collapse collapse" data-bs-parent="#pages" aria-labelledby="heading-3">
+          <div class="accordion-body bg-success text-white">Page Three Details</div>
+      </div>
+
+
+
+
+        </div>
+
 
         </div>
 
